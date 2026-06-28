@@ -81,7 +81,7 @@ export default function Contact() {
                 { icon: <Mail size={16} />, label: 'Email', value: personal.email, href: `mailto:${personal.email}` },
                 { icon: <Phone size={16} />, label: 'Phone', value: personal.phone, href: `tel:${personal.phone}` },
                 { icon: <Github size={16} />, label: 'GitHub', value: 'github.com/asis2003', href: personal.github },
-                { icon: <Linkedin size={16} />, label: 'LinkedIn', value: 'linkedin.com/in/asis-jovin', href: personal.linkedin },
+                { icon: <Linkedin size={16} />, label: 'LinkedIn', value: 'linkedin.com/in/asis-jovin-fernando-130534231', href: personal.linkedin },
               ].map(item => (
                 <a
                   key={item.label}
@@ -185,11 +185,6 @@ export default function Contact() {
                   Failed to send. Try emailing directly.
                 </div>
               )}
-
-              {/* EmailJS setup note (remove after configuring) */}
-              <p className="font-mono text-xs text-[#4a5568] text-center">
-                ⚙️ Configure EmailJS keys in Contact.jsx to activate the form
-              </p>
             </form>
           </div>
         </div>

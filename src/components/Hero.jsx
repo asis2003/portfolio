@@ -139,7 +139,7 @@ export default function Hero() {
       </div>
 
       {/* Terminal block floating right (desktop) */}
-      <div className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2 w-80 rounded border border-[#1e2d50] bg-[#0f1629] overflow-hidden glow-cyan">
+      <div className="hidden lg:block absolute right-12 top-1/2 -translate-y-1/2 w-72 rounded border border-[#1e2d50] bg-[#0f1629] overflow-hidden glow-cyan">
         <div className="flex items-center gap-2 px-4 py-3 bg-[#131d35] border-b border-[#1e2d50]">
           <span className="w-3 h-3 rounded-full bg-red-500/60" />
           <span className="w-3 h-3 rounded-full bg-yellow-500/60" />

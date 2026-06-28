@@ -6,7 +6,7 @@ export const personal = {
   email: 'asisjovinfernando2003@gmail.com',
   phone: '+91-9791246593',
   github: 'https://github.com/asis2003',
-  linkedin: 'https://linkedin.com/in/asis-jovin',
+  linkedin: 'https://www.linkedin.com/in/asis-jovin-fernando-130534231',
   summary: `Cloud Engineer with 1+ year of hands-on experience designing, deploying, managing, 
   monitoring, and automating large-scale cloud infrastructure across AWS, Azure, and GCP for 
   mission-critical SaaS platforms. Automation-first mindset — builds tools and scripts (Python, Bash) 
