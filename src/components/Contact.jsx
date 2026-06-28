@@ -6,9 +6,9 @@ import { personal } from '../data';
 // Replace these three values after setting up
 // your free EmailJS account at emailjs.com
 // ─────────────────────────────────────────────
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
+const EMAILJS_SERVICE_ID  = 'service_gfvttul';
+const EMAILJS_TEMPLATE_ID = 'template_6614ft1';
+const EMAILJS_PUBLIC_KEY  = 'raGWxa28UGG-RU5XD';
 // ─────────────────────────────────────────────
 
 export default function Contact() {
