@@ -5,6 +5,7 @@ const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Case Study', href: '#casestudy' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -12,7 +13,6 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState('');
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -34,13 +34,12 @@ export default function Navbar() {
         </a>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-6">
           {navLinks.map(link => (
             <li key={link.label}>
               <a
                 href={link.href}
                 className="nav-link font-mono text-xs text-[#94a3b8] hover:text-[#00d4ff] transition-colors tracking-wider uppercase"
-                onClick={() => setActive(link.label)}
               >
                 {link.label}
               </a>
@@ -56,7 +55,7 @@ export default function Navbar() {
           Hire Me
         </a>
 
-        {/* Mobile menu toggle */}
+        {/* Mobile toggle */}
         <button
           className="md:hidden text-[#94a3b8] hover:text-[#00d4ff] transition-colors"
           onClick={() => setOpen(!open)}
