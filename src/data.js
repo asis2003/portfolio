@@ -159,6 +159,26 @@ export const projects = [
     color: 'orange',
     badge: 'IaC / Cloud',
   },
+  {
+    name: 'AutoKube',
+    tagline: 'Self-healing Kubernetes with AI-powered automation',
+    description: `A production-ready Kubernetes controller that continuously watches your cluster, 
+    scores pod health using an AI anomaly analyzer, and automatically applies remediation actions 
+    — no human intervention required. Detects CrashLoopBackOff, OOMKilled, ImagePullBackOff, and 
+    high restart counts, then heals them in under 60 seconds while exposing full Prometheus metrics.`,
+    stack: ['Python', 'Kubernetes', 'Prometheus', 'Docker', 'AI/ML', 'SRE'],
+    features: [
+      'Real-time pod event watching via Kubernetes API',
+      'AI anomaly scoring engine (0–1 scale) with optional ML model plug-in',
+      'Auto-remediates: delete pod, rollback deployment, scale bounce, patch memory',
+      'Escalation logic — stops healing after max retries and fires an alert',
+      'Prometheus metrics: anomaly scores, healing actions, latency histograms',
+    ],
+    github: 'https://github.com/asis2003/autokube',
+    live: null,
+    color: 'green',
+    badge: 'K8s / AI',
+  },
 ];
 
 export const education = {
