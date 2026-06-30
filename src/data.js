@@ -119,6 +119,27 @@ export const experience = [
 
 export const projects = [
   {
+    name: 'GhostPod',
+    tagline: 'Predicting Kubernetes OOMKills before they happen',
+    description: `A real-time Kubernetes resource leak detector built with FastAPI and Python that 
+    solves the classic SRE pain point — alerts firing after the crash, not before. GhostPod tracks 
+    pod memory and CPU usage trends live, fits a confidence-gated linear regression over a rolling 
+    window, and extrapolates forward to predict which pods will OOMKill or get evicted in the next 
+    N minutes, distinguishing genuine leaks from healthy oscillating workloads.`,
+    stack: ['Python', 'FastAPI', 'NumPy', 'Kubernetes', 'Pydantic', 'WebSocket'],
+    features: [
+      'Linear regression trend engine with R² confidence gating to avoid false positives',
+      'Live dashboard ranking pods by time-to-breach with a risk heatmap',
+      'Pluggable metrics source — swaps mock data for metrics-server/Prometheus with zero other changes',
+      'Slack/PagerDuty-style webhook alerting on critical/warning risk transitions',
+      'Simulates real-world scenarios: slow leaks, sudden spikes, GC sawtooth, CPU throttle creep',
+    ],
+    github: 'https://github.com/asis2003/ghostpod',
+    live: null,
+    color: 'green',
+    badge: 'SRE / Kubernetes',
+  },
+  {
     name: 'AIOps Incident Triage Assistant',
     tagline: 'Automated alert storm triage for SRE on-call teams',
     description: `A production-realistic SRE dashboard built with FastAPI and Python that automates 
